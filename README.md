@@ -1,16 +1,50 @@
-# React + Vite
+# 🔐 Password Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, responsive **Password Generator** built with React — customize length, include numbers and special characters, and copy your secure password with one click.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [https://meerubcodes.github.io/Password-Generator/](https://meerubcodes.github.io/Password-Generator/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- 🎚️ Adjustable password length (6–100 characters)
+- 🔢 Option to include numbers
+- 🔣 Option to include special characters
+- 📋 One-click copy to clipboard
+- ⚡ Instant password generation (updates live as you tweak settings)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **React** — Hooks: `useState`, `useEffect`, `useCallback`, `useRef`
+- **Tailwind CSS** — for styling
+- **Vite** — as the build tool
+- **GitHub Pages** — for deployment
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧠 What I Learned
+
+This project was a hands-on deep dive into React hooks:
+- Using `useCallback` to memoize the password generation logic and avoid unnecessary re-renders
+- Using `useEffect` to auto-regenerate the password whenever length or options change
+- Using `useRef` to directly access the input field for the copy-to-clipboard feature
+- Deploying a Vite + React app to GitHub Pages, including handling the base path and build/deploy scripts
+
+## 🚀 Getting Started
+
+Clone the repo and run it locally:
+
+```bash
+git clone https://github.com/meerubcodes/Password-Generator.git
+cd Password-Generator
+npm install
+npm run dev
+```
+
+Open `http://localhost:5173` in your browser.
+
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+Made with ❤️ and a lot of debugging.
